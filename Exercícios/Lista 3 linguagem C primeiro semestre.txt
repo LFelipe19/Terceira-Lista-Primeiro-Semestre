@@ -1,0 +1,458 @@
+#include <stdio.h>
+
+int main()
+{
+
+   //exercicio1//
+  float num;
+        printf("Digite um numero maior que 20:");
+            scanf("%f", &num);
+
+    if (num > 20)
+        printf("Seu numero eh: %.2f\n", num / 2 );
+
+    else if (num < 20)
+        printf("Digite outro numero!\n");
+
+  //exercicio2//
+  int num;
+    printf("Digite qualquer numero:");
+    scanf(" %d", &num);
+
+    if (num > 0) {
+        printf("Seu numero eh positivo\n");
+    }
+    else if (num < 0) {
+        printf("Seu numero eh negativo\n");
+    }
+    else {
+        printf("Seu numero eh nulo\n");
+    }
+
+//exercicio3//
+  int num;
+        printf("Digite um numero para saber se eh multiplo de 3:");
+        scanf("%d", &num);
+
+  if (num % 3 == 0)
+      printf("eh Multiplo de 3");
+
+  else
+      printf("nao eh multiplo de 3");
+
+//exercicio4//
+
+ float valor, prest;
+    printf("Digite o Salario bruto:\n");
+        scanf(" %f", &valor);
+
+    printf("Digite o valor da prestacao:\n");
+        scanf(" %f", &prest);
+
+ if (valor *0.3 <= prest ) {
+     printf("Emprestimo concedido\n");
+ }
+ else {
+     printf("Emprestimo nao concedido\n");
+ }
+
+//exercicio5//
+    int numero, centena;
+        printf("Informe um numero: ");
+            scanf("%d", &numero);
+
+    if (numero > 100 && numero < 999) {
+
+        centena = numero / 100;
+
+        if (centena % 2 == 0) {
+
+            printf("O numero da centena e par!");
+        }
+        else {
+
+            printf("O numero da centena e impar!");
+        }
+    }
+    else{
+        printf("O numero não possui 3 digítos!");
+    }
+
+
+   /*
+exercicio6
+   int numero;
+    printf("digite um numero");
+    scanf("%d", &numero);
+if (numero > 20)
+{
+    printf("seu numero e maior q 20");
+}
+else if(numero < 20)
+{
+    printf("menor");
+}
+else if (numero = 20)
+{
+    printf("seu numero eh 20");
+}
+*/
+
+/*
+exercicio7
+ int num;
+ int num2;
+    printf("digite um numero");
+    scanf("%d",&num);
+     printf("digite mais um numero");
+     scanf("%d",&num2);
+    
+    if (num == num2)
+{
+    printf("os numeros sao iguais");
+}
+else
+{
+    printf("sao numeros diferentes");
+}
+*/
+
+/*
+exercicio8
+    int num;
+    int num2;
+     printf("digite um numero: ");
+    scanf("%d",&num);
+     printf("digite mais um numero: ");
+     scanf("%d",&num2);
+if (num > num2)
+{
+    printf("o maior eh:%d ",num);
+}
+else if(num < num2)
+{
+    printf("o maior eh: %d ",num2);
+}
+else if(num == num2)
+{
+    printf("os numeros sao iguais");
+}
+*/
+
+/*
+exercicio9
+  int num;
+  int num2;
+     printf("digite um numero: ");
+    scanf("%d",&num);
+     printf("digite mais um numero: ");
+     scanf("%d",&num2);
+if(num > num2)
+{
+    printf("%d,%d",num,num2);
+}
+else
+{
+    printf("%d,%d",num2,num);
+}
+*/
+
+/*
+exercicio10
+   int num;
+  int num2;
+  int num3;
+     printf("digite um numero: ");
+    scanf("%d",&num);
+     printf("digite o segundo numero: ");
+     scanf("%d",&num2);
+     printf("digite o  terceiro numero");
+     scanf("%d",&num3);
+if (num > num2 && num > num3)
+{
+    printf("%d",num);
+}
+else if(num2 > num && num2 > num3)
+{
+    printf("%d",num2);
+}
+else if (num3 > num && num3 > num2)
+{
+ printf("%d",num3);   
+}
+*/
+
+/*
+exercicio11
+ int num;
+ int num2;
+ int num3;
+   printf("digite um numero: ");
+    scanf("%d",&num);
+     printf("digite o segundo numero: ");
+     scanf("%d",&num2);
+     printf("digite o  terceiro numero");
+     scanf("%d",&num3);
+if (num > num2 && num > num3 && num2 > num3)
+{
+    printf("%d,%d,%d",num3,num2,num);
+}
+else if (num > num2 && num > num3 && num3 > num2)
+{
+    printf("%d,%d,%d",num2,num3,num1);
+}
+else if (num2 > num && num2 > num3 && num > num3)
+{
+    printf("%d,%d,%d",num3,num,num2);
+}
+else if (num2 > num && num2 > num3 && num3 > num)
+{
+    printf("%d,%d,%d",num,num3,num2);
+}
+else if (num3 > num && num3 > num2 && num > num2)
+{
+    printf("%d,%d,%d",num2,num,num3);
+}
+else if (num3 > num && num3 > num2 && num2 > num)
+{
+    printf("%d,%d,%d",num,num2,num3);
+}
+*/ 
+
+/*
+//exercicio12//
+    int num1, num2, num3, menor, inter, maior;
+    
+    printf("Digite um numero: ");
+    scanf("%d", &num1);
+    printf("Digite um segundo numero: ");
+    scanf("%d", &num2);
+    printf("Digite um terceiro numero: ");
+    scanf("%d", &num3);
+    
+    printf("\n");
+    
+    
+    if ((num1 == num2) || num1 == num3 || num2 == num3)
+    {
+        printf("Digite numeros distintos: ");
+        }
+    else {
+        menor = num1;
+
+        if(menor > num2)
+        {
+            inter = menor;
+            menor = num2;
+        }
+        else {
+            inter = num2;
+        }
+        
+        
+        if(inter > num3){
+            maior = inter;
+            if (menor > num3){
+                inter = menor;
+                menor = num3;
+            }
+            else {
+                inter = num3;
+            }
+        }
+        else{
+            maior = num3;
+        }
+        
+    }
+    printf("Menor= %d \n", menor);
+    printf("Intermediario = %d \n", inter);
+    printf("Maior = %d \n", maior);
+    
+   
+
+
+
+
+
+
+
+ //exercicio13//
+        int num, num2, num3, num4, num5, menor, maior;
+
+        printf("Digite cinco valores: ");
+        scanf("%d%d%d%d%d", &num, &num2, &num3, &num4, &num5);
+
+        menor = num;
+        maior = num;
+
+        if(menor > num2)
+            menor = num2;
+        if(menor > num3)
+            menor = num3;
+        if(menor > num4)
+            menor = num4;
+        if(menor > num5)
+            menor = num5;
+
+        if(maior < num2)
+            maior = num2;
+        if(maior < num3)
+            maior = num3;
+        if(maior < num4)
+            maior = num4;
+        if(maior < num5)
+            maior = num5;
+
+        printf("\tMenor: %d\tMaior: %d\n", menor, maior);
+
+//exercicio14//
+    float a, b, c;
+    printf("Digite o tamanho do lado A do seu triangulo: ");
+        scanf("%f",&a);
+    printf("Digite o tamanho do lado B do seu triangulo: ");
+        scanf("%f",&b);
+    printf("Digite o tamanho C do seu triangulo: ");
+        scanf("%f",&c);
+
+    if(a < (b+c) && b < (a+c) && c < (a+b))
+    {
+        printf("Eh um triangulo");
+    }
+    else
+    {
+        printf("nao eh um triangulo");
+    }
+//exercicio15//
+    int n1, n2, n3, media;
+    printf("Digite a primeira nota:");
+        scanf("%d",&n1);
+    printf("Digite a segunda nota: ");
+        scanf("%d",&n2);
+    printf("Digite a terceira nota: ");
+        scanf("%d",&n3);
+
+    media = n1 + n2 + n3 / 3;
+
+    if (media >= 7)
+    {
+        printf("Aluno aprovado");
+    }
+    else
+    {
+        printf("Aluno reprovado");
+    }
+//exercicio16//
+    int idade;
+
+    printf("Digite a sua idade:");
+        scanf("%d", &idade);
+
+    if (idade >= 5 && idade <= 7)
+    {
+        printf("Infantil A\n");
+    }
+    else if (idade >=8 && idade <= 10)
+    {
+        printf("Infantil B\n");
+    }
+    else if (idade >= 11 && idade <= 13)
+    {
+        printf("Juvenil A\n");
+    }
+    else if (idade >= 14 && idade <= 17)
+    {
+        printf("Juvenil B\n");
+    }
+    else if (idade >= 18)
+    {
+        printf("Adulto\n");
+    }
+    else
+    {
+        printf("Sem categoria\n");
+    }
+
+
+//exercicio17//
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+        int a;
+        int b;
+        int c;
+        int d;
+        float x1;
+        float x2;
+
+        printf("Digite o valor de a: ");
+        scanf("%d", &a);
+
+        if (a == 0)
+        {
+            printf("O a nao pode ser zero\n");
+        }
+        else
+        {
+            printf("Digite o valor de b: ");
+            scanf("%d", &b);
+
+            printf("Digite o valor de c: ");
+            scanf("%d", &c);
+
+            d = (b * b) - (4 * a * c);
+
+
+            if(d<0)
+            {
+                printf("Nao existe raiz negativa\n");
+            }
+            else
+            {
+                x1 = (-b + sqrt(d)) / (2 * a);
+                x2 = (-b - sqrt(d)) / (2 * a);
+
+                printf("x1 - %.2f\n", x1);
+                printf("x2 - %.2f\n", x2);
+            }
+        }
+
+//exercicio 18//
+        float n1, n2, n3;
+        printf("Digite os pontos do primeiro atleta: ");
+        scanf("%f", &n1);
+        printf("Digite os pontos do segundo atleta: ");
+        scanf("%f", &n2);
+        printf("Digite os pontos do terceiro atleta: ");
+        scanf("%f", &n3);
+
+        if(n1 < n2 && n1 < n3)
+        { if(n2 < n3)
+                printf("%f, %f, %f", n1, n2, n3);
+
+            else
+
+                printf("%f, %f, %f", n1, n3, n2);
+        }
+        else if(n2 < n1 && n2 < n3)
+        { if (n1 < n3)
+                printf("%f, %f, %f", n2, n1, n3);
+            else
+                printf("%f, %f, %f", n2, n3, n1);
+        }
+        else
+        { if (n2 < n1)
+                printf("%f, %f, %f", n3, n2, n1);
+            else
+                printf("%f, %f, %f", n3, n1, n2);
+        }
+        float media = (n1 + n2 + n3) / 3;
+        if ((n1 + n2 + n3) >= 100)
+            printf("\n%.2f", media);
+        else
+            printf("\nEquipe desclassificada");
+
+    return 0;
+
+}
